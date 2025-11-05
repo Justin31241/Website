@@ -1,10 +1,20 @@
 const canvas = document.getElementById("canvas-background"); 
 const myScene = canvas.getContext('2d');
 
-//circle parameters
 const radius = 20;
 
-//canvas center
+
+
+canvas.addEventListener('mousemove', function(event){
+    isMouseMoving = true;
+
+    while (isMouseMoving == true) {
+        resizeAndDraw()
+        isMouseMoving = false
+    }
+})
+
+
 
 
 function drawGrid(squareSize) {
@@ -33,8 +43,12 @@ function drawGrid(squareSize) {
 function resizeAndDraw() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  
-  drawGrid(50);
+    
+  myScene.clearRect(0, 0, canvas.width, canvas.height);
+
+  drawGrid(10);
+
+  drawCircle(x, y);
 }
 
 window.addEventListener('resize', resizeAndDraw);
@@ -42,13 +56,12 @@ window.addEventListener('resize', resizeAndDraw);
 resizeAndDraw();
 
 function drawCircle() {
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
 
-    myScene.beginPath();
-    myScene.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-    myScene.fillStyle = 'rgba(0,0,0,0.3)';
+  myScene.beginPath();
+  myScene.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+  myScene.fillStyle = 'rgba(0,0,0,0.3)';
+
+  myScene.fill();
 }
-
-drawCircle();
-myScene.fill();
