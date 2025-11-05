@@ -33,6 +33,7 @@ main, header {
 
 #top-bar li {
   margin-right: 25px;
+  padding-left: 20px;
 }
 
 #top-bar li a {
