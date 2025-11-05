@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas-background");
 const myScene = canvas.getContext('2d');
 
 //circle parameters
-const radius = 50;
+const radius = 20;
 
 //canvas center
 
@@ -47,6 +47,7 @@ function drawCircle() {
 
     myScene.beginPath();
     myScene.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+    myScene.fillStyle = 'rgba(0,0,0,0.3)';
 }
 
 drawCircle();
