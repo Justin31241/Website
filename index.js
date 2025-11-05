@@ -69,6 +69,19 @@ function resizeCanvas() {
     canvas.height = window.innerHeight;
 }
 
+function resizeCircle() {
+    if (circle.radius < 4) {
+        circle.radius = 20
+    }
+    else {
+        circle.radius -= 1;
+    }
+    
+}
+
+window.addEventListener('click', function(event) {
+    resizeCircle();
+})
 
 window.addEventListener('mousemove', function(event) {
     mouse.x = event.clientX;
