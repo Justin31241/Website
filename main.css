@@ -38,7 +38,6 @@ main, header {
 
 #top-bar {
   display: flex;
-  justify-content: center;
   overflow-x: auto;
   white-space: nowrap;
   list-style: none;
@@ -47,6 +46,11 @@ main, header {
   background-color: #333;
   box-shadow: 0px 10px 8px 1px rgba(0, 0, 0, 0.2);
   animation: slide-in-top 1s ease-out forwards;
+}
+
+#top-bar li:first-child {
+  margin-right: auto; 
+  font-weight: bold;
 }
 
 #top-bar li {
