@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const aboutMeCard = document.querySelector("#about-me-info");
