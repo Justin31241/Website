@@ -67,6 +67,10 @@ main, header {
   padding-bottom: 5px;
 }
 
+#top-bar li:first-child a::after {
+    background-color: orange;
+}
+
 #top-bar li a::after {
   content: '';
   position: absolute;
@@ -137,5 +141,6 @@ main, header {
 
 .fa-github {
   color: white;
-  font-size: 30px; /* Make it 30 pixels tall */
+  font-size: 30px;
+  margin: 5px;
 }
