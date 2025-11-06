@@ -40,7 +40,7 @@ function drawScene() {
 
 function drawGrid(squareSize) {
     myScene.strokeStyle = '#ccc'; 
-    myScene.lineWidth = 0.009;
+    myScene.lineWidth = 0.1;
 
     for (let i = 0; i < canvas.height / squareSize; i++) {
         myScene.beginPath();
