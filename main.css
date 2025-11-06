@@ -141,16 +141,17 @@ main, header {
     display: block;            
     font-size: 24px;          
     font-weight: bold;
-    margin-bottom: 0px;       
+    margin-bottom: 15px;       
     color: orange;            
 }
 
-#about-me-card.animate {
+#about-me-info.animate {
     animation: slide-in-bottom 1s ease-out forwards;
 }
 
 .fa-github {
-  color: white;
-  font-size: 30px;
-  margin: 5px;
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+    padding-top: 1000px;
 }

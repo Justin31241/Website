@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const aboutMeCard = document.querySelector("#about-me-card");
+    const aboutMeCard = document.querySelector("#about-me-info");
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
