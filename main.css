@@ -134,6 +134,7 @@ main, header {
     text-align: left;
     opacity: 0;
     transition: transform 0.3s ease;
+    margin: 0;
 }
 
 #about-me {
@@ -157,7 +158,6 @@ main, header {
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 2px solid rgb(58, 155, 211);
-    aspect-ratio: 1 / 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,6 +165,7 @@ main, header {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 200px;
     height: 200px;
+    margin: 10px;
 }
 
 #github:hover {
