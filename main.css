@@ -174,7 +174,8 @@ main, header {
 }
 
 #github .fa-github {
-    color: rgb(32, 32, 32);
+    color:#141414;
+    transition: color 1s ease;
     font-size: 4.5rem;
 }
 
