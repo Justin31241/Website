@@ -123,14 +123,12 @@ main, header {
     
 }
 #about-me-info {
-    font-size: 17px;           
-    line-height: 1.6;          
+    font-size: 17px;        
+    line-height: 1.6;       
     border: 2px solid orange; 
-    background-color: #333;    
+    background-color: #333;   
     width: 500px;
     padding: 30px;            
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
     text-align: left;
@@ -149,11 +147,28 @@ main, header {
     animation: slide-in-bottom 1s ease-out forwards;
 }
 
-.fa-github {
+#github {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(58, 155, 211);
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+
+#github:hover {
+    background-color: #555; 
+}
+
+#github .fa-github {
     color: white;
-    font-size: 30px;
-    margin: 5px;
-    padding-top: 1000px;
+    font-size: 4.5rem;
 }
 
 #settings {
@@ -162,4 +177,11 @@ main, header {
 
 #settings:hover {
   transform: rotate(180deg);
+}
+
+.top-row {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;   
+    gap: 20px;               
 }
