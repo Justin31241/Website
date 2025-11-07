@@ -133,6 +133,7 @@ main, header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
     text-align: left;
     opacity: 0;
+    transition: transform 0.3s ease;
 }
 
 #about-me {
@@ -147,6 +148,10 @@ main, header {
     animation: slide-in-bottom 1s ease-out forwards;
 }
 
+#about-me-info:hover {
+    transform: scale(1.05);
+}
+
 #github {
     background-color: #333;
     border-radius: 20px;
@@ -157,18 +162,25 @@ main, header {
     justify-content: center;
     align-items: center;
     text-decoration: none; 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 200px;
     height: 200px;
 }
 
 #github:hover {
-    background-color: #555; 
+    background-color: #444343; 
+    transform: scale(1.05);
 }
 
 #github .fa-github {
-    color: white;
+    color: rgb(32, 32, 32);
     font-size: 4.5rem;
+}
+
+#github .fa-github:hover {
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+    transition: color 1s ease;
 }
 
 #settings {
